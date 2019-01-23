@@ -162,11 +162,11 @@ L.control.mousePosition().addTo(map);
 			  
   $("#Year1").click(function(event) {
     event.preventDefault();
-    if(map.hasLayer(op)) {
+    if(map.hasLayer(overlays)) {
         $(this).removeClass('selected');
-        map.removeLayer(op);
+        map.removeLayer(overlays);
     } else {
-        map.addLayer(op);        
+        map.addLayer(overlays);        
         $(this).addClass('selected');
    }
 });
