@@ -106,18 +106,16 @@
           return {color: '#55b4da', weight: 1 };
       }
   });
-         
- var iplt = L.esri.dynamicMapLayer({
-  url: 'https://sigi.pu.go.id/portalpupr2/rest/services/SatuPeta/Satu_Peta_IPLT/MapServer',
-	   useCors: true,
-    layers: [0],
-  });
+     var op = L.layerGroup();    
+var imageUrl = './assets/Yogya1943.jpg',
+    imageBounds = [[-883421.841279, 12276299.432001], [-854944.733264, 12299285.273020]];
+L.imageOverlay(imageUrl, imageBounds).addTo(op);
           
           
           var map = L.map('map', {
 		center: [-7.784608, 110.369008],
 		zoom: 14,
-		layers: [streets, pkp, iplt]
+		layers: [streets, pkp]
 	});
     	var baseLayers = {
 		"Grayscale ESRI": gray,
@@ -128,7 +126,7 @@
     
     var overlays = {
 	      "PKP": pkp,
-        "IPLT": iplt,
+        "Tahun 1943": op,
 	};
     L.control.layers(baseLayers,overlays,{}, {collapsed: true}).addTo(map);
 	L.control.scale().addTo(map);
