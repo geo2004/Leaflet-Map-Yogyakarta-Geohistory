@@ -11,7 +11,8 @@
  */
 .container {
   position: relative; }
-
+.container2 {
+  position: initial; }
 .btn {
   margin-bottom: 0.5rem; }
   .btn + .btn {
