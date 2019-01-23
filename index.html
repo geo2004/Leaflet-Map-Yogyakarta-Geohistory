@@ -97,7 +97,7 @@
   L.esri.basemapLayer("GrayLabels").addTo(gray);
   
 	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light'}),
-		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'});
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
         
           var pkp = L.esri.featureLayer({
@@ -106,10 +106,10 @@
           return {color: '#55b4da', weight: 1 };
       }
   });
-     var op = L.layerGroup();    
+       
 var imageUrl = './assets/Yogya1943.jpg',
     imageBounds = [[-883421.841279, 12276299.432001], [-854944.733264, 12299285.273020]];
-L.imageOverlay(imageUrl, imageBounds).addTo(op);
+var op = L.imageOverlay(imageUrl, imageBounds);
           
           
           var map = L.map('map', {
