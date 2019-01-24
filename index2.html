@@ -69,7 +69,7 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a id="Year1" class="nav-link link" href="https://geo2004.github.io/Leaflet_Modern/index.html">Tahun 1943</a></li><li class="nav-item"><a id="Year1" class="nav-link link" href="https://geo2004.github.io/Leaflet_Modern/index2.html">Tahun 2001</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="https://mobirise.com/" data-toggle="dropdown-submenu" aria-expanded="false">FEATURES</a><div class="dropdown-menu"><a class="dropdown-item" href="https://mobirise.com/">New Item</a></div></li><li class="nav-item"><a class="nav-link link" href="https://mobirise.com/">HELP</a></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a id="Year1" class="nav-link link" href="https://geo2004.github.io/Leaflet_Modern/index.html">Tahun 1943</a></li><li class="nav-item"><a id="Year2" class="nav-link link" href="https://geo2004.github.io/Leaflet_Modern/index2.html">Tahun 2001</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="https://mobirise.com/" data-toggle="dropdown-submenu" aria-expanded="false">FEATURES</a><div class="dropdown-menu"><a class="dropdown-item" href="https://mobirise.com/">New Item</a></div></li><li class="nav-item"><a class="nav-link link" href="https://mobirise.com/">HELP</a></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -141,16 +141,6 @@ var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true})
   }); 
 L.control.mousePosition().addTo(map);
 			  
-  $("#Year1").click(function(event) {
-    event.preventDefault();
-    if(map.hasLayer(overlays)) {
-        $(this).removeClass('selected');
-        map.removeLayer(overlays);
-    } else {
-        map.addLayer(overlays);        
-        $(this).addClass('selected');
-   }
-});
 </script></div>
 		</div>
 		   
