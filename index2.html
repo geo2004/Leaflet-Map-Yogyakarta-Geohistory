@@ -106,6 +106,10 @@
 var imageUrl = './assets/Yogya1996.jpg',
     imageBounds = [[-7.8944642, 110.3715478], [-7.7454538, 110.5437745]];
 var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true});
+var mb = L.tileLayer.mbTiles('./assets/Yogya_19961.mbtiles', {
+		minZoom: 10,
+		maxZoom: 17
+	});
           
           
           var map = L.map('map', {
@@ -122,6 +126,7 @@ var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true})
     
     var overlays = {
         "Peta RBI Tahun 2001 Lembar Timoho Skala 25.000": op,
+	"Peta RBI Tahun 2001 Lembar Yogyakarta Skala 25.000": mb,
 	};
     L.control.layers(baseLayers,overlays,{}, {collapsed: true}).addTo(map);
 	L.control.scale().addTo(map);
