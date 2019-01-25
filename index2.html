@@ -105,11 +105,10 @@
          
 var imageUrl = './assets/Yogya1996.jpg',
     imageBounds = [[-7.8944642, 110.3715478], [-7.7454538, 110.5437745]];
+var imageUrl2 = './assets/YOGYAKARTA2.jpg',
+    imageBounds2 = [[-7.8945977, 110.2462248], [-7.7452999, 110.4106882]];		  
 var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true});
-var mb = L.tileLayer.mbTiles('./assets/yogya_19961.mbtiles', {
-		minZoom: 10,
-		maxZoom: 17
-	});
+var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true});
           
           
           var map = L.map('map', {
