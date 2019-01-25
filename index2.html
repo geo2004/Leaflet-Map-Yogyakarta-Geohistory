@@ -102,8 +102,8 @@
 		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
          
-var imageUrl = './assets/Yogya1943.jpg',
-    imageBounds = [[-7.9106603, 110.2798742], [-7.6572032, 110.4863594]];
+var imageUrl = './assets/Yogya1996.jpg',
+    imageBounds = [[-7.8944642, 110.3715478], [-7.7454538, 110.5437745]];
 var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true});
           
           
@@ -120,7 +120,7 @@ var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true})
 	};
     
     var overlays = {
-        "Tahun 1943": op,
+        "Peta RBI Tahun 2001 Lembar Timoho Skala 25.000": op,
 	};
     L.control.layers(baseLayers,overlays,{}, {collapsed: true}).addTo(map);
 	L.control.scale().addTo(map);
