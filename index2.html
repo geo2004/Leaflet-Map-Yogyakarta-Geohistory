@@ -124,8 +124,9 @@ var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true
 	};
     
     var overlays = {
-        "Peta RBI Tahun 2001 Lembar Timoho Skala 25.000": op,
-	"Peta RBI Tahun 2001 Lembar Yogyakarta Skala 25.000": mb,
+        "Peta RBI Tahun 2001 Lembar Yogyakarta Skala 25.000": mb,
+	    "Peta RBI Tahun 2001 Lembar Timoho Skala 25.000": op,
+	
 	};
     L.control.layers(baseLayers,overlays,{}, {collapsed: true}).addTo(map);
 	L.control.scale().addTo(map);
