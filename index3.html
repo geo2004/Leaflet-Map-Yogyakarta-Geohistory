@@ -103,10 +103,10 @@
 		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
          
-var imageUrl = './assets/Yogya1996.jpg',
-    imageBounds = [[-7.8944642, 110.3715478], [-7.7454538, 110.5437745]];
-var imageUrl2 = './assets/YOGYAKARTA2.jpg',
-    imageBounds2 = [[-7.8945977, 110.2462248], [-7.7452999, 110.4106882]];		  
+var imageUrl = './assets/G960205-032.jpg',
+    imageBounds = [[-8.1757295, 108.9348675], [-6.9351045, 110.5716841]];
+var imageUrl2 = './assets/G900109-032.jpg',
+    imageBounds2 = [[-8.2353304, 108.8714053], [-6.9739177, 110.5321876]];		  
 var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true});
 var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true});
           
@@ -124,8 +124,8 @@ var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true
 	};
     
     var overlays = {
-        "Peta RBI Tahun 2001 Lembar Yogyakarta Skala 25.000": mb,
-	    "Peta RBI Tahun 2001 Lembar Timoho Skala 25.000": op,
+        "Joint Operation Graphic Ground, Directorate Survey, Ministry of Defence U.K at 250.000 scale, 1963": mb,
+	    "Jogjakarta Map Scale 250.000 by Army Map Survey, U.S, 1950": op,
 	
 	};
     L.control.layers(baseLayers,overlays,{}, {collapsed: true}).addTo(map);
