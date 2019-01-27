@@ -93,19 +93,20 @@
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+	var mbAttr2 = 'Map data &copy; <a href="#">Army Map Service, U.S</a> contributors',		  
     
     var gray = L.layerGroup();
   // more than one service can be grouped together and passed to the control together
   L.esri.basemapLayer("DarkGray").addTo(gray);
   L.esri.basemapLayer("GrayLabels").addTo(gray);
   
-	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light'}),
-		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
-        satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
+	var grayscale   = L.tileLayer(mbUrl, mbAttr, {id: 'mapbox.light'}),
+		streets  = L.tileLayer(mbUrl, mbAttr, {id: 'mapbox.streets'}),
+        satellites  = L.tileLayer(mbUrl, mbAttr, {id: 'mapbox.satellite'});
          
 var imageUrl = './assets/Yogya1943.jpg',
     imageBounds = [[-7.9106603, 110.2798742], [-7.6572032, 110.4863594]];
-var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true});
+var op = L.imageOverlay(imageUrl, imageBounds, mbAttr2, {opacity: 0.6, autoZIndex: true});
           
           
           var map = L.map('map', {
