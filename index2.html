@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/tugu.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Home</title>
+  <title>Geohistory - Pre Independence/title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin">
@@ -44,7 +44,8 @@
 <script src="./assets/Leaflet.TileLayer.MBTiles.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.66.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 	<script src="./assets/L.Control.MousePosition.js" charset="utf-8"></script>
-  
+     <script type="text/javascript" src="./assets/leaflet-control-credits.js"></script>
+    <link rel="stylesheet" href="assets/leaflet-control-credits.css" />
   <style>
     #map { position: absolute; top:0; bottom:0; right:0; left:0; }
   </style>
@@ -146,7 +147,11 @@ var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true
     }
   }); 
 L.control.mousePosition().addTo(map);
-			  
+   L.controlCredits({
+        	image: "./assets/photo.jpg",
+        	link: "http://www.youtube.com/c/geo2004/",
+        	text: "Geohistory Interactive mapping<br/>by Geo2004"
+        }).addTo(map);			  
 </script></div>
 		</div>
 		   
