@@ -104,12 +104,10 @@
 		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
          
-var imageUrl = './assets/JOGJA_1926.jpg',
-    imageBounds = [[-7.8391702, 110.3852575], [-7.7406624, 110.4849851]];
-var imageUrl2 = './assets/JOGJA_1925_25k_2.jpg',
-    imageBounds2 = [[-7.8427572, 110.3021708], [-7.7406913, 110.4057116]];		  
+var imageUrl = './assets/JOGJA19202.jpg',
+    imageBounds = [[-7.8411237, 110.2956118], [-7.6482167, 110.4902618]];	  
 var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true});
-var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true});
+
           
           
           var map = L.map('map', {
@@ -125,9 +123,7 @@ var mb = L.imageOverlay(imageUrl2, imageBounds2, {opacity: 0.6, autoZIndex: true
 	};
     
     var overlays = {
-        "Jogjakarta Herzien Door Den Topografischen Dienst at schaal 25.000 Blad 47/XLII, 1935": mb,
-	    "Kotagede Opgenomen Den Topografischen Dienst at Schaal 25.000 Blad XXIV, 1926": op,
-	
+	    "Djogjakarta Opgenomen Den Topografischen Inrichting at Schaal 50.000 Blad XXIII-D, 1920": op,
 	};
     L.control.layers(baseLayers,overlays,{}, {collapsed: true}).addTo(map);
 	L.control.scale().addTo(map);
