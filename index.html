@@ -100,7 +100,7 @@
   L.esri.basemapLayer("GrayLabels").addTo(gray);
   
 	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light'}),
-		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
+		streets  = L.tileLayer(mbUrl, mbAttr, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
          
 var imageUrl = './assets/Yogya1943.jpg',
