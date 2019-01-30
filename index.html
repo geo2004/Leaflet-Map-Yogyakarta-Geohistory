@@ -140,8 +140,7 @@ var op = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6, autoZIndex: true})
       results.addLayer(L.marker(data.results[i].latlng));
     }
   }); 
-L.control.mousePosition().addTo(map);
-		map.attributionControl.setPrefix('');	  
+L.control.mousePosition().addTo(map);	  
    L.controlCredits({
         	image: "./assets/photo.jpg",
         	link: "http://www.youtube.com/c/geo2004/",
