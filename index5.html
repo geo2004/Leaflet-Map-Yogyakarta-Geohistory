@@ -91,8 +91,8 @@
                   <script>
 	
 	var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+			'Old Maps © <a href="http://maps.library.leiden.edu/apps/s7">Leiden University Dutch Colonial Maps</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>,' + 'Street Maps © <a href="http://arcgis.com">ArcGIS Online</a>',
 		mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
     
     var gray = L.layerGroup();
@@ -147,7 +147,9 @@ L.control.mousePosition().addTo(map);
         	image: "./assets/photo.jpg",
         	link: "http://www.youtube.com/c/geo2004/",
         	text: "Geohistory Interactive mapping<br/>by Geo2004"
-        }).addTo(map);			  
+        }).addTo(map);	
+map.attributionControl._attributions = {};
+map.attributionControl.addAttribution(mbAttr);
 </script></div>
 		</div>
 		   
