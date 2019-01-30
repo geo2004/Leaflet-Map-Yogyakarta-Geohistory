@@ -99,8 +99,8 @@
   L.esri.basemapLayer("DarkGray").addTo(gray);
   L.esri.basemapLayer("GrayLabels").addTo(gray);
   
-	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light'}),
-		streets  = L.tileLayer(mbAttr, mbUrl, {id: 'mapbox.streets'}),
+	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
          
 var imageUrl = './assets/Yogya1943.jpg',
