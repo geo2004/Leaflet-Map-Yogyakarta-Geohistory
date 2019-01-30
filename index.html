@@ -99,7 +99,7 @@
   L.esri.basemapLayer("DarkGray").addTo(gray);
   L.esri.basemapLayer("GrayLabels").addTo(gray);
   
-	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'}),
+	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light'}),
 		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets'}),
         satellites  = L.tileLayer(mbUrl, {id: 'mapbox.satellite'});
          
@@ -148,7 +148,7 @@ L.control.mousePosition().addTo(map);
         	text: "Geohistory Interactive mapping<br/>by Geo2004"
         }).addTo(map);
 map.attributionControl._attributions = {};
-map.attributionControl.addAttribution("New attribution");
+map.attributionControl.addAttribution("Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://maps.library.leiden.edu/apps/s7">Leiden University</a> | Map style: &copy; <a href="https://mapbox.com">Mapbox</a>");
 </script></div>
 		</div>
 		   
