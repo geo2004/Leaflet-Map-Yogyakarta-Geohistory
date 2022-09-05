@@ -4,5 +4,5 @@ This repo is my personal project which has purpose to collect and share about co
 
 You can view all the collected data from this link : https://geo2004.github.io/Leaflet-Map-Yogyakarta-Geohistory
 
-## Answer:
+## Preview:
 ![GitHub Logo](geohistory.png)
